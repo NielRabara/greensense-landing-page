@@ -107,15 +107,13 @@ greensense-landing-page/
 
 ---
 
-## 📄 License
-
-This project is for **educational use** and can be modified freely.
-
----
-
-## 🙌 Author
-
-**GreenSense Landing Page Developer**
-Created for **IT103 – Web Programming**
+### Contact Information
+- **📧 Email**: nrRabara@mcm.edu.ph
+- **📧 Email**: nielrabara90@gmail.com
+- **💬 Discord**: shun1o
 
 ---
+
+*M1FA2 Case Study - Computer Science 2nd Year*
+---
+
