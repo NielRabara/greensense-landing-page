@@ -1,0 +1,229 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GreenSense — Smart Insights for Small Greenhouse Farmers</title>
+  <meta name="description" content="GreenSense: simple, affordable intelligence for small greenhouse farmers — reduce waste, increase profit, plan smarter." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+    <img src="Icon.png" alt="GreenSense Logo" width="36">
+    <span class="brand-text">GreenSense</span>
+    </a>
+      <nav class="nav" id="primaryNav">
+        <a href="#features">Features</a>
+        <a href="#how">How it Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="cta small">Get Started</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Smart Insights for Small Greenhouse Farmers</h1>
+          <p class="lead">Turn everyday purchases and sales into actionable advice — reduce waste, save money, and grow more profitably.</p>
+          <div class="hero-actions">
+            <a class="btn primary" id="ctaSignup">Start Free Trial</a>
+            <a class="btn ghost" href="#features">See Features</a>
+          </div>
+
+          <ul class="benefits">
+            <li>Profit-per-crop visibility</li>
+            <li>Smart planting suggestions</li>
+            <li>Cost & waste reduction</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Features that matter</h2>
+        <p class="muted">Designed for small growers — clear, actionable, and affordable.</p>
+
+        <div class="cards">
+          <article class="card feature-card" data-feature="tracking">
+            <h3>Transaction Tracking</h3>
+            <p>Log purchases and sales in seconds.</p>
+            <button class="btn outline more-info" data-info="tracking">More Info</button>
+          </article>
+
+          <article class="card feature-card" data-feature="insights">
+            <h3>AI Insights</h3>
+            <p>Automatic profit-per-crop analysis.</p>
+            <button class="btn outline more-info" data-info="insights">More Info</button>
+          </article>
+
+          <article class="card feature-card" data-feature="alerts">
+            <h3>Alerts & Suggestions</h3>
+            <p>Get notified about cost spikes.</p>
+            <button class="btn outline more-info" data-info="alerts">More Info</button>
+          </article>
+
+          <article class="card feature-card" data-feature="reports">
+            <h3>Clear Reports</h3>
+            <p>No spreadsheets required.</p>
+            <button class="btn outline more-info" data-info="reports">More Info</button>
+          </article>
+        </div>
+
+        <!-- Modal -->
+        <div id="featureModal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section alt" id="how">
+      <div class="container two-col">
+        <div>
+          <h2>How GreenSense works</h2>
+          <ol class="process">
+            <li><strong>Record</strong> purchases & sales via your phone or computer.</li>
+            <li><strong>Analyze</strong> — our AI identifies profitable crops and cost sinks.</li>
+            <li><strong>Act</strong> — receive planting suggestions and alerts to reduce waste.</li>
+          </ol>
+          <p class="muted">Within weeks you'll see clearer margins and better planting decisions — without complicated tools.</p>
+        </div>
+
+        <div class="quote">
+          <blockquote>
+            "GreenSense helped me cut seed and fertilizer costs by 20% and stop overplanting. Simple and powerful."<br>
+            <cite>— Ana, greenhouse grower</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="cta-strip">
+      <div class="container cta-inner">
+        <div>
+          <h3>Ready to grow smarter?</h3>
+          <p class="muted">Start a free 14-day trial — no credit card required.</p>
+        </div>
+        <div>
+          <a class="btn primary" id="ctaSignupStrip">Start Free Trial</a>
+          <a class="btn ghost" href="#contact">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Info -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2>Plans for small growers</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h4>Starter</h4>
+            <p class="price">Free</p>
+            <ul>
+              <li>Up to 2 greenhouses</li>
+              <li>Basic reports</li>
+              <li>Email support</li>
+            </ul>
+            <button class="btn outline">Choose</button>
+          </div>
+
+          <div class="price-card recommended">
+            <h4>Grow</h4>
+            <p class="price">$9 / month</p>
+            <ul>
+              <li>Unlimited greenhouses</li>
+              <li>AI insights & alerts</li>
+              <li>CSV export</li>
+            </ul>
+            <button class="btn primary">Get Started</button>
+          </div>
+
+          <div class="price-card">
+            <h4>Pro</h4>
+            <p class="price">$29 / month</p>
+            <ul>
+              <li>Forecasting & IoT integrations</li>
+              <li>Priority support</li>
+              <li>Custom reports</li>
+            </ul>
+            <button class="btn outline">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer anchor -->
+    <section class="section alt" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Talk to us</h2>
+          <p class="muted">Questions? Want a demo? Drop your details and we'll reach out.</p>
+
+          <form id="contactForm" class="form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your farm"></textarea>
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p>Email: hello@greensense.example</p>
+          <p>Phone: +1 (555) 123-4567</p>
+
+          <h3>Follow</h3>
+          <p class="socials">
+            <a href="#" aria-label="Twitter">Twitter</a> · <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> GreenSense — Smart Insights for Small Greenhouse Farmers</p>
+      <nav class="footer-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
